@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { EB_Garamond } from "next/font/google";
 import "./globals.css";
 
-const garamond = EB_Garamond({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={garamond.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
